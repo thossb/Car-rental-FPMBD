@@ -1,0 +1,127 @@
+.main-color{
+    color : white;
+}
+
+.margin-top{
+    margin-top:4%;
+}
+
+.white{
+    color:white;
+}
+
+.font-one{
+    font-weight: 900;
+}
+
+.font-two{
+    font-weight: 200;
+}
+
+.form-display{
+    background-color: transparent;
+    color:white;
+    font-weight: 200;
+    font-size: 10px;
+}
+
+.button-color{
+    background-color: #737BBE;
+    color:white;
+}
+
+.button-color-non{
+    background-color: #2D325C;
+    color:white;
+}
+
+.bg-reg{
+    background-image: url("/image/desktop.png");
+    background-size:cover;
+}
+
+.head{
+    background-color: #141734;
+    height:120px;
+    top:0;
+    padding-top:20px;
+    padding-bottom:20px;
+    color:white;
+}
+
+.text-left{
+    text-align: left;
+}
+
+.list-car{
+    padding:10px 10px 10px 10px;
+    margin-top:20px;
+    margin-left:100px;
+    margin-right:100px;
+    height:200px;
+    border-radius: 5px;;
+    background-color:#EBEBEB;
+}
+
+.review{
+    outline-style: solid;
+    border-radius: 10px;
+    padding:10px;
+}
+
+.review-desc{
+    font-size: 10px;
+    text-align: justify;
+    overflow: hidden;
+}
+
+.btn-main{
+    background-color: #2D325C;
+    color:white;
+    margin-top:10px;
+    border-radius: 10px;
+}
+
+.main-container{
+    padding:10px 40px 10px 40px;
+    border-radius: 5px;;
+    background-color:#EBEBEB;
+    margin-bottom: 20px;
+}
+
+.bg-grey{
+    background-color:#EBEBEB;
+}
+
+.price-font{
+    font-weight: 900;
+    font-size: 30px;
+    color:#737BBE;
+}
+
+.badge{
+   background-color: #2D325C;
+    border-radius: 20px;
+    padding:20px;
+}
+
+.badge2{
+    color:white;
+    background-color: #2D325C;
+    border-radius: 20px;
+    padding:15px;
+}
+
+.font-bold{
+    font-weight: bold;
+}
+
+.form-booking{
+    border: 1px solid #5D5FEF;
+
+}
+
+.form-booking2{
+    background-color: #2D325C;
+    color:white;
+}

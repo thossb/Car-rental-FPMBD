@@ -1,0 +1,44 @@
+-- Function untuk melihat bookings yang dilakukan oleh client
+CREATE FUNCTION CountBookingsByClient(clientId INT) RETURNS INT
+    DETERMINISTIC
+BEGIN
+    DECLARE bookingCount INT;
+    
+    SELECT COUNT(*) INTO bookingCount
+    FROM bookings
+    WHERE client_id = clientId;
+        
+    RETURN bookingCount;
+END;
+
+SELECT CountBookingsByClient(600001) AS booking_count;
+
+
+-- Function untuk melihat total bookings yang ada
+DELIMITER //
+
+CREATE OR REPLACE FUNCTION `GetTotalBookings`() RETURNS INT
+    DETERMINISTIC
+BEGIN
+    DECLARE totalBookings INT;
+    
+    SELECT COUNT(*) INTO totalBookings
+    FROM db_fp.bookings;
+    
+    RETURN totalBookings;
+END//
+
+DELIMITER ;
+
+SELECT GetTotalBookings() AS total_bookings_count;
+
+-- Function untuk menghitung feedback yang masuk
+CREATE FUNCTION `GetTotalFeedbackCount`() RETURNS int(11)
+    DETERMINISTIC
+BEGIN
+    DECLARE feedbackCount INT;
+    SELECT COUNT(*) INTO feedbackCount FROM user_feedback;
+    RETURN feedbackCount;
+END;
+
+SELECT GetTotalFeedbackCount();
